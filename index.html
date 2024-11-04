@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div id="loading"></div>
+
+<div class="cntr">
+
+    <div class="navbar">
+        <div class="icon">
+            <img src="Barber_Shop_img/logo.png">
+        </div>
+        <!-- <div class="menue" id="menue">
+            <img id ="menueLogo" src="Barber_Shop_img/menu.png">
+        </div> -->
+    </div>
+
+
+    <div class="content">
+        <h1 class="bigLogo">Hair Studio</h1>
+        <p class="paragraph">Style Your Hair is Style Your Life</p>
+        <div class="btns">
+            <a class="btn"><span></span>Find Out</a>
+            <a class="btn"><span></span>Read More</a>
+        </div>
+    </div>
+
+</div>
+
+<div id="sidenav" style="right: -250px;">
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIAL</a></li>
+            <li><a href="#">MEET US</a></li>
+        </ul>
+    </nav>
+
+</div>
+<div id="menueBtn">
+    <img id="menue" src="Barber_Shop_img/menu.png" >
+</div>
+
+
+<div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=jt2I_KpgwUNsDS8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=jt2I_KpgwUNsDS8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=jt2I_KpgwUNsDS8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=jt2I_KpgwUNsDS8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+<script>
+
+let menue = document.getElementById('menue')
+let menueBtn = document.getElementById('menueBtn')
+let sidenav = document.getElementById('sidenav')
+
+// sidenav.style.right = '-250px'
+
+menueBtn.onclick = function change(){
+    if(sidenav.style.right === '-250px'){
+        sidenav.style.right = '0'
+        menue.src = "Barber_Shop_img/close.png"
+    }else{
+        sidenav.style.right = '-250px'
+         menue.src = "Barber_Shop_img/menu.png"
+    }
+ }
+
+let load = document.getElementById('loading')
+
+window.addEventListener('load',function(){
+    load.style.display = 'none'
+})
+
+</script>
+
+</body>
+</html>
